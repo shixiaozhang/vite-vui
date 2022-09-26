@@ -44,5 +44,7 @@ jobs:
           version: 7.2.1
       - name: Install modules
         run: pnpm install
+      - name: Run Lint
+        run: pnpm run lint
       - name: Run Test
         run: pnpm run test:run
