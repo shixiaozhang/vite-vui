@@ -5,20 +5,23 @@ import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import Unocss from "unocss/vite";
+
 export default defineConfig({
   plugins: [vue(), vueJsx(), Unocss()],
   build: {
-    cssCodeSplit: true,
     rollupOptions: {
       external: ["vue", "vue-router"],
       output: {
         globals: {
-          vue: "vue",
+          vue: "Vue",
         },
-        // assetFileNames: `assets/[name].css`,
+        assetFileNames: "assets/[name].css",
       },
     },
-    minify: false,
+    minify: "esbuild",
+    sourcemap: true, // 输出单独 source文件
+    cssCodeSplit: true,
+    reportCompressedSize: true, // 生成压缩大小报告
     lib: {
       entry: "./src/entry.ts",
       name: "ViteUi",

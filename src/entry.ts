@@ -1,7 +1,7 @@
 import type { App } from "vue";
 import MyButton from "./button/button";
 import SFCButton from "./button/SFCButton.vue";
-import JSXButton from "./button/JSXButton";
+import JSXButton from "./button";
 import "uno.css";
 // 导出单独组件
 export { MyButton, SFCButton, JSXButton };
