@@ -1,6 +1,6 @@
 {
   "name": "@youngzhang/vite-ui",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "",
   "packageManager": "pnpm@7.5.0",
   "main": "src/entry.ts",

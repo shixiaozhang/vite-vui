@@ -8,15 +8,16 @@ import Unocss from "unocss/vite";
 
 import typescript from "rollup-plugin-typescript2";
 
-export default defineConfig({
+export default defineConfig(({ command }) => ({
   plugins: [
     vue(),
     vueJsx(),
     Unocss(),
-    typescript({
-      tsconfig: "tsconfig.json",
-      tsconfigOverride: { compilerOptions: { noImplicitAny: false } },
-    }),
+    command === "build" &&
+      typescript({
+        tsconfig: "tsconfig.json",
+        tsconfigOverride: { compilerOptions: { noImplicitAny: false } },
+      }),
   ],
   build: {
     rollupOptions: {
@@ -48,4 +49,4 @@ export default defineConfig({
       web: [/.[tj]sx$/], //支持jsx
     },
   },
-});
+}));
