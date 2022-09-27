@@ -13,5 +13,14 @@
   "license": "ISC",
   "devDependencies": {
     "vitepress": "1.0.0-alpha.13"
+  },
+  "dependencies": {
+    "@youngzhang/vite-ui": "workspace:^0.2.0",
+    "vitepress-theme-demoblock": "^1.4.2"
+  },
+  "peerDependencyRules": {
+    "ignoreMissing": [
+      "@algolia/client-search"
+    ]
   }
 }

@@ -6,8 +6,18 @@ import vue from "@vitejs/plugin-vue";
 import vueJsx from "@vitejs/plugin-vue-jsx";
 import Unocss from "unocss/vite";
 
+import typescript from "rollup-plugin-typescript2";
+
 export default defineConfig({
-  plugins: [vue(), vueJsx(), Unocss()],
+  plugins: [
+    vue(),
+    vueJsx(),
+    Unocss(),
+    typescript({
+      tsconfig: "tsconfig.json",
+      tsconfigOverride: { compilerOptions: { noImplicitAny: false } },
+    }),
+  ],
   build: {
     rollupOptions: {
       external: ["vue", "vue-router"],
@@ -26,7 +36,7 @@ export default defineConfig({
       entry: "./src/entry.ts",
       name: "ViteUi",
       fileName: "vite-ui",
-      formats: ["umd", "iife", "es"],
+      formats: ["umd", "iife", "es", "cjs"],
     },
   },
   test: {
