@@ -106,6 +106,6 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "references": [{ "path": "./tsconfig.node.json" }],
-  "include": ["./src/**/*", "./shims-vue.d.ts"],
-  "exclude": ["node_modules"]
+  "include": ["./src/**/*", "**.vue", "./shims-vue.d.ts"],
+  "exclude": ["node_modules", "dist"]
 }
