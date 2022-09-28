@@ -13,10 +13,14 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@iconify/json": "^2.1.103",
+    "@unocss/preset-icons": "^0.45.18",
+    "@vitejs/plugin-vue-jsx": "^2.0.0",
+    "unocss": "^0.45.18",
     "vitepress": "1.0.0-alpha.13"
   },
   "dependencies": {
-    "@youngzhang/vite-ui": "workspace:^0.2.0",
+    "@youngzhang/vite-ui": "^0.3.0",
     "vitepress-theme-demoblock": "^1.4.2"
   },
   "peerDependencyRules": {
