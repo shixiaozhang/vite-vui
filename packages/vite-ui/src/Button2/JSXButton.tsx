@@ -22,7 +22,7 @@ export const props = {
   },
 };
 export default defineComponent({
-  name: "JSXButton",
+  name: "JSXButton2",
   props,
   setup(props, { slots }) {
     return () => (

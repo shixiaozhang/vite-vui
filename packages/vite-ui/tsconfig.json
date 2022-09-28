@@ -1,4 +1,10 @@
 {
+  "ts-node": {
+    // these options are overrides used only by ts-node
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
 
@@ -106,6 +112,6 @@
     "skipLibCheck": true /* Skip type checking all .d.ts files. */
   },
   "references": [{ "path": "./tsconfig.node.json" }],
-  "include": ["./src/**/*", "**.vue", "./shims-vue.d.ts"],
+  "include": ["./src/**/*", "src/**/*.tsx", "src/**/*.ts", "./shims-vue.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

@@ -1,6 +1,4 @@
-<script setup lang="ts">
-import { JSXButton } from "./entry";
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <div>
