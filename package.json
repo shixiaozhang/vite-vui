@@ -7,6 +7,7 @@
   "scripts": {
     "dev": "pnpm run --filter @youngzhang/vite-ui dev",
     "build": "pnpm run --filter @youngzhang/vite-ui build",
+    "build:all": "pnpm run --filter @youngzhang/vite-ui build:all",
     "lint": "pnpm run --filter @youngzhang/vite-ui lint",
     "test": "pnpm run --filter @youngzhang/vite-ui test",
     "test:run": "pnpm run --filter @youngzhang/vite-ui test:run",
