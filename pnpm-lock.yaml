@@ -61,7 +61,7 @@ importers:
       vite: 3.0.9_terser@5.4.0
       vitest: 0.23.4_al62ui7gvcvyly64dffsg5obza
 
-  docs-vite:
+  docs:
     specifiers:
       '@iconify/json': ^2.1.103
       '@unocss/preset-icons': ^0.45.18
