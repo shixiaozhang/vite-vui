@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "docs:dev": "vitepress dev docs",
-    "docs:build": "vitepress build docs",
+    "docs:build": "vitepress build ",
     "docs:serve": "vitepress serve docs"
   },
   "keywords": [],
@@ -17,7 +17,7 @@
     "@unocss/preset-icons": "^0.45.18",
     "@vitejs/plugin-vue-jsx": "^2.0.0",
     "unocss": "^0.45.18",
-    "vitepress": "1.0.0-alpha.13"
+    "vitepress": "1.0.0-alpha.17"
   },
   "dependencies": {
     "@youngzhang/vite-ui": "^0.3.0",

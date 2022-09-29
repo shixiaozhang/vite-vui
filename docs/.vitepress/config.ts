@@ -23,7 +23,5 @@ export default {
   themeConfig: {
     sidebar,
   },
-  markdown: {
-    config: (md) => {},
-  },
 };
+
